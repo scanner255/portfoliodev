@@ -34,11 +34,11 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #7e2117;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #fff;
+$background: #ffffff;
 $background-alt: #f2f2f5;
 
 // Define border colors
@@ -85,7 +85,7 @@ $text: #74808a;
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
 
     &.active {
@@ -393,7 +393,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: rgba($base-color-hover, 0.7);
     z-index: 1;
 }
 
@@ -446,16 +446,24 @@ footer {
 */
 
 #about {
+
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    text-align: center;
 
     h2 {
         color: $heading;
     }
 
     p {
+        text-align: left;
         color: $text;
         margin: 0;
+        padding-top: 20px;
+    }
+
+    img {
+        width: 100%;
     }
 }
 
@@ -652,6 +660,10 @@ footer {
 
 .project-image {
     float: left;
+    max-width: 300px;
+    img {
+        width: 100%;
+    }
 }
 
 .project-info {
@@ -672,6 +684,7 @@ footer {
         color: $text;
         margin: 0 0 15px 0;
         font-size: 0.9em;
+        text-align: left;
     }
 }
 
@@ -743,6 +756,7 @@ footer {
 #contact-form {
     max-width: 500px;
     margin: 0 auto;
+    margin-bottom: 10px;
 
     input, textarea {
         display: block;
